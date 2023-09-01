@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-weight: 700;
+    color: #000;
+
+    background-color: #fff;
+    /* background-image: url(../img/bg.jpg); */
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 940px;
+}
+.stats {
+  width: 320px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  @media(min-width: 768px) {
+    width: 640px;
+  }
+}
+.stats__header {
+  padding: 20px 25px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  @media(min-width: 768px) {
+    width: 640px;
+  }
+}
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+   color: #fff;
+
+    background-color: #000;
+}
