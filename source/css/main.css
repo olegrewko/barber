@@ -42,3 +42,6 @@ body {
 
     background-color: #000;
 }
+button {
+  border: none;
+}

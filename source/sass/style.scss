@@ -1,1 +1,205 @@
-// Начните писать стили здесь
+// @import("global/variables.less");
+// Colors
+
+$darkgrey: #292929;
+$lightgrey: #f8f5f2;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 320px;
+
+// @import("global/fonts.less");
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("fonts/pt-sans-narrow.woff2") format("woff2"),
+    url("fonts/pt-sans-narrow.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("fonts/pt-sans-narrow-bold.woff2") format("woff2"),
+    url("fonts/pt-sans-narrow-bold.woff") format("woff");
+}
+// @import("global/global.less");
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.text-100 {
+  margin-left: 100px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// @import("blocks/page.less");
+
+.page {
+  height: 100%;
+  font-size: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  line-height: 27px;
+}
+
+.page__body {
+  max-width: 320px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 ;
+  background-color: $lightgrey;
+  color: #000000;
+}
+// @import("blocks/page-header.less");
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  color: #ffffff;
+}
+.page-header__logo {
+  width: 226px;
+  height: 60px;
+  margin-top: 20px;
+  margin: 0 auto;
+  // outline: 1px solid rgba(255, 0, 0, 0.8);
+  // outline-offset: -5px;
+   @media (min-width: $tablet-width) {
+    order: 2;
+    height: 400px;
+  }
+    @media (min-width: $desktop-width) {
+    height: 648px;
+  }
+}
+.page-header__logo-image {
+  padding-top: 15px;
+
+}
+
+// @import("blocks/main-nav.less");
+
+.main-nav__toggle-wrapper {
+  height: 51px;
+  // width: 80px;
+  // outline: 1px solid rgba(0, 110, 255, 0.8);
+  background-color: #826550;
+  display: flex;
+  justify-content: space-between;
+}
+.main-nav__toggle {
+  background-color: #6A4d38;
+  display: flex;
+  justify-content: flex-end;
+  height: 51px;
+  width: 60px;
+  border: none;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__list a {
+  color: #ffffff;
+}
+.main-nav__wrapper {
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 auto;
+    transform: translateX(-100%);
+}
+.main-nav__wrapper--active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 320px;
+    margin: 0 auto;
+    transform: translateX(0%);
+  }
+// @media (min-width: $tablet-width) {
+//     .main-nav__wrapper {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 640px;
+//     margin: 0 auto;
+//   }
+//      .main-nav__toggle {
+//     display: none;
+//   }
+
+// }
+// @media (min-width: $desktop-width) {
+//   .main-nav__wrapper {
+//     width: 960px;
+//   }
+// }
+
+// @import("blocks/site-list.less");
+
+.site-list {
+
+  // outline: 2px solid rgba(255, 234, 0, 0.8);
+  // outline-offset: -5px;
+}
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 570px;
+  }
+
+
+}
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 780px;
+  }
+}
+// @import("blocks/user-list.less");
+
+.user-list {
+  // outline: 5px solid rgba(0, 255, 0, 0.8);
+  // outline-offset: -5px;
+}
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: 60px;
+  }
+}
+.menu__btn-line-wrapper {
+margin: auto;
+
+}
+.menu__btn-line {
+        width: 25px;
+        height: 2px;
+        border: none;
+        background: #fff;
+        border-radius: 0px;
+        margin: 5px 0;
+    }
+.page-header__logo-image {
+  margin: 0 auto;
+}
