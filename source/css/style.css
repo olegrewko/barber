@@ -1,16 +1,37 @@
 @font-face {
-  font-family: "PT Sans Narrow";
-  font-weight: normal;
+  font-family: "Montserrat";
   font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
   font-display: swap;
-  src: url("fonts/pt-sans-narrow.woff2") format("woff2"), url("fonts/pt-sans-narrow.woff") format("woff");
 }
 @font-face {
-  font-family: "PT Sans Narrow";
-  font-weight: bold;
+  font-family: "Montserrat";
   font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-display: swap;
-  src: url("fonts/pt-sans-narrow-bold.woff2") format("woff2"), url("fonts/pt-sans-narrow-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-display: swap;
 }
 img {
   max-width: 100%;
@@ -29,7 +50,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -37,7 +59,7 @@ img {
 .page {
   height: 100%;
   font-size: 18px;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 27px;
 }
 
@@ -147,15 +169,14 @@ img {
 }
 
 .stats__number {
-  font-family: PT Sans Narrow;
+  font-family: "Montserrat";
   font-size: 40px;
   font-weight: bold;
 }
 
 .stats__description {
-  font-family: PT Sans Narrow;
+  font-family: "Montserrat";
   font-size: 18px;
   font-weight: normal;
   text-align: right;
 }
-/*# sourceMappingURL=style.css.map */
