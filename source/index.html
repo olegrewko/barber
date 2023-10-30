@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп «Бородинский»</title>
+ <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-<link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="../manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -98,7 +104,7 @@
     <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
     <section class="stats">
     <div class="stats__wrapper">
-       <header class="stats__header">
+      <header class="stats__header">
         <h2 class="visually-hidden">
           Статистика Барбершопа
         </h2>
@@ -120,13 +126,13 @@
       </header>
       <dl class="stats__list">
         <div class="stats__item">
-          <dt class="stats__number">
+          <div class="stats__number">
             1 500<sup>*</sup>
-          </dt>
-          <dd class="stats__description">
+          </div>
+          <div class="stats__description">
             рублей<br>
             вложений
-          </dd>
+          </div>
 
         </div>
         <div class="stats__item">
@@ -164,7 +170,100 @@
     </div>
   </section>
   <section class="advantages">
-        <div class="advantages__wrapper slider">
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      Slide 1
+                       <div class="swiper-slide__item">
+                         <img
+              class="slider-blog__img"
+              src="img/advantage-1-icon.png"
+              alt="img/advantage-1-icon.png"
+            />
+                    <h3 class="slider-blog__item-title">Быстро</h3>
+          <p class="slider-blog__item-text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки.</p>
+
+                    </div>
+    </div>
+    <div class="swiper-slide">
+      Slide 2
+                      <div class="swiper-slide__item">
+                           <img
+              class="slider-blog__img"
+              src="img/advantage-2-icon.png"
+              alt="img/advantage-2-icon.png"
+            />
+                              <h3 class="advantages__title">Круто</h3>
+          <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+
+                    </div>
+    </div>
+    <div class="swiper-slide">
+      Slide 3
+       <div class="swiper-slide__item">
+                                          <img
+              class="slider-blog__img"
+              src="img/advantage-3-icon.png"
+              alt="img/advantage-3-icon.png"
+            />
+                              <h3 class="advantages__title">Дорого</h3>
+          <p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+
+                    </div>
+    </div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+    <!-- Slider main container -->
+ <!-- <div class="container">
+     <div class="slider">
+      <div class="slider-blog__inner">
+                    <div class="slider-blog__item">
+                         <img
+              class="slider-blog__img"
+              src="img/advantage-1-icon.png"
+              alt="img/advantage-1-icon.png"
+            />
+                    <h3 class="slider-blog__item-title">Быстро</h3>
+          <p class="slider-blog__item-text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки.</p>
+
+                    </div>
+                    <div class="slider-blog__item">
+                           <img
+              class="slider-blog__img"
+              src="img/advantage-2-icon.png"
+              alt="img/advantage-2-icon.png"
+            />
+                              <h3 class="advantages__title">Круто</h3>
+          <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+
+                    </div>
+                    <div class="slider-blog__item">
+                                          <img
+              class="slider-blog__img"
+              src="img/advantage-3-icon.png"
+              alt="img/advantage-3-icon.png"
+            />
+                              <h3 class="advantages__title">Дорого</h3>
+          <p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+
+                    </div>
+      </div>
+     </div>
+ </div> -->
+    <!-- <div class="advantages__wrapper slider">
                 <h2 class="visually-hidden">Наши преимущества</h2>
       <ul class="advantages__list  slider__list">
         <li class="advantages__item advantages__item--fast slider__item">
@@ -185,7 +284,7 @@
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
       </p>
-    </div>
+    </div> -->
 
   </section>
     <section class="news">
@@ -321,8 +420,8 @@
     </div>
   </form>
 </section>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+   <!-- <script>
 $(function () {
   $('.main-nav__toggle').on('click', function name() {
     $('.main-nav__wrapper').toggleClass('main-nav__wrapper--active');
@@ -330,6 +429,11 @@ $(function () {
 
   });
 });
-   </script>
+</script> -->
+
+
+ <script src="./js/jquery-1.11.0.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

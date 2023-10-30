@@ -15,24 +15,38 @@ body {
 
 .container {
     margin: 0 auto;
-    padding: 0 10px;
-    width: 940px;
+    padding: 0 0px;
+    width: 320px;
 }
 .stats {
+
   width: 320px;
   margin: 0 auto;
-  border: 1px solid #000;
-  @media(min-width: 768px) {
+
+  /* @media(min-width: 768px) {
     width: 640px;
-  }
+  } */
+}
+.stats__wrapper {
+
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+
+  /* @media(min-width: 768px) {
+    width: 640px;
+  } */
 }
 .stats__header {
-  padding: 20px 25px;
+  /* max-width: 320px; */
+  width: 320px;
+  box-sizing: border-box;
+  padding: 10px 0px;
   margin: 0 auto;
-  border: 1px solid #000;
-  @media(min-width: 768px) {
+  /* border: 1px solid #000; */
+  /* @media(min-width: 768px) {
     width: 640px;
-  }
+  } */
 }
 .page-header {
   display: flex;
