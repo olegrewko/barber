@@ -257,3 +257,12 @@ margin: auto;
   font-weight: normal;
   text-align: right;
 }
+.news__item  {
+    display: flex;
+    justify-content: space-around;
+    text-align: flex-start;
+   }
+.news__text {
+     text-align: left;
+     padding-left: 20px;
+    }
