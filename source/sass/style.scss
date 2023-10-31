@@ -87,7 +87,7 @@ img {
   height: 100%;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
-  line-height: 27px;
+  line-height: 20px;
 }
 
 .page__body {
@@ -240,19 +240,20 @@ margin: auto;
 .stats__item {
   height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #272626;
   color: #fff;
 }
 .stats__number {
   font-family: 'Montserrat';
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
+  text-align: left;
 }
 .stats__description {
   font-family: 'Montserrat';
-  font-size: 18px;
+  font-size: 14px;
   font-weight: normal;
   text-align: right;
 }
