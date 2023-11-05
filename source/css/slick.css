@@ -245,20 +245,20 @@
 }
 .slick-dots button
  {
-  width: 16px;
+  width: 6px;
  height: 6px;
-
+transform: rotate(45deg);
   border: none;
   background: #242121;
   font-size: 0;
 
 }
 .slick-active button {
-    width: 16px;
+    width: 6px;
   height: 6px;
-
-border: none;
-  background: tomato;
+  transform: rotate(45deg);
+border: 1px solid #000;
+  background: #fff;
 
 }
 .slick-dots li + li {

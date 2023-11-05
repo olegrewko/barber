@@ -192,3 +192,39 @@ img {
   text-align: left;
   padding-left: 20px;
 }
+
+.page-footer {
+  background-color: #292929;
+  margin: 0 auto;
+}
+.page-footer__contacts {
+  margin: 0 auto;
+}
+.contacts__title {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contacts__text {
+  color: #fff;
+  text-align: center;
+}
+.contacts__phone {
+  color: #fff;
+}
+.contacts__phone-mobile {
+  color: #fff;
+}
+
+.grid-products__btn {
+  width: 280px;
+  height: 50px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin: 2px;
+  background-color: transparent;
+}

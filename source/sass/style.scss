@@ -266,3 +266,117 @@ margin: auto;
      text-align: left;
      padding-left: 20px;
     }
+.page-footer {
+      background-color: #292929;
+      margin: 0 auto;
+		// .page-footer__wrapper
+
+		&__wrapper {
+		}
+
+		// .page-footer__contacts
+
+		&__contacts {
+      margin: 0 auto;
+		}
+
+		// .page-footer__social
+
+		&__social {
+		}
+
+		// .page-footer__copyright
+
+		&__copyright {
+		}
+}
+.contacts {
+
+		// .contacts__title
+
+		&__title {
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+		}
+
+		// .contacts__text
+
+		&__text {
+      color: #fff;
+      text-align: center;
+		}
+
+		// .contacts__phone
+
+		&__phone {
+      color: #fff;
+		}
+
+		// .contacts__phone-mobile
+
+		&__phone-mobile {
+      color: #fff;
+		}
+}
+.social {
+
+		// .social__title
+
+		&__title {
+		}
+
+		// .social__list
+
+		&__list {
+		}
+
+		// .social__item
+
+		&__item {
+		}
+
+		// .social__link
+
+		&__link {
+		}
+
+		// .social__link--vkontakte
+
+		&__link--vkontakte {
+		}
+
+		// .social__link--facebook
+
+		&__link--facebook {
+		}
+
+		// .social__link--instagram
+
+		&__link--instagram {
+		}
+}
+.copyright {
+
+		// .copyright__text
+
+		&__text {
+		}
+
+		// .copyright__link
+
+		&__link {
+		}
+}
+.grid-products__btn {
+  width: 280px;
+  height: 50px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin: 2px;
+  background-color: transparent;
+}
